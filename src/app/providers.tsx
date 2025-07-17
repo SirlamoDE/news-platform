@@ -4,10 +4,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 
 import { ReactNode, useState } from "react";
+import {ProvidersProps} from "@/types/storyDetailsType";
 
-interface ProvidersProps {
-  children: ReactNode;
-}
+
+
 
 import { makeStore } from "@/store/store";
 

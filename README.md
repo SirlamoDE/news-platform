@@ -13,6 +13,10 @@ A modern, full-featured news platform built with Next.js, TypeScript, and Tailwi
 - 📦 Modular components for easy maintenance and scaling
 - 🛠️ Redux Toolkit for global state management
 
+## Live Demo
+
+[View the app on Vercel](https://news-platform-smoky.vercel.app/)
+
 ## Project Structure
 
 ```

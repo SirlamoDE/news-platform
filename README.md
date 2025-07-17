@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AGC Newsnet
+
+A modern, full-featured news platform built with Next.js, TypeScript, and Tailwind CSS. AGC Newsnet delivers up-to-date stories, categories, and media, with a responsive and modular design.
+
+## Features
+
+- ⚡ Fast and SEO-friendly with Next.js App Router
+- 🎨 Styled using Tailwind CSS for rapid UI development
+- 📰 Dynamic stories, categories, and bookmarks
+- 🔍 Integrated search and filtering
+- 🖼️ Optimized images using Next.js `<Image>`
+- 📱 Responsive design for all devices
+- 📦 Modular components for easy maintenance and scaling
+- 🛠️ Redux Toolkit for global state management
+
+## Project Structure
+
+```
+src/
+  app/            # Next.js app directory (routing, layouts, pages)
+    layout.tsx
+    globals.css
+    stories/      # Dynamic routes for stories
+    bookmarks/    # Bookmarks feature
+  components/
+    ads/          # Advertisement components (SidebarAd, AdBar, etc.)
+    features/     # Feature components (story, search, etc.)
+    layout/       # Layout components (Header, Footer, MainNavBar, etc.)
+    ui/           # Reusable UI components
+  lib/            # API utilities, hooks, helpers
+  store/          # Redux Toolkit store and slices
+  types/          # TypeScript type definitions
+public/           # Static assets (images, logos, etc.)
+```
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `dev` – Start the development server
+- `build` – Build for production
+- `start` – Start the production server
+- `lint` – Run ESLint
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [ESLint](https://eslint.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **API Endpoints:** Edit `src/lib/api.ts` to connect to your backend.
+- **Types:** Maintain type safety in `src/types/`.
+- **UI:** Customize styles in `src/app/globals.css` and Tailwind config.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy easily on [Vercel](https://vercel.com/) or any platform that supports Next.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+## License
+
+[MIT](LICENSE)
